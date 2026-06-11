@@ -101,7 +101,7 @@ export default function App() {
     .filter(l => l.name.toLowerCase().includes(search.toLowerCase()))
 
   return (
-    <div className="bg-gray-900 min-h-screen p-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {selected ? (
         <ListingDetail listing={selected} onBack={() => setSelected(null)} />
       ) : (

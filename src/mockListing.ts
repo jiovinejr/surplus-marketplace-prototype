@@ -41,7 +41,7 @@ export const mockListings: Listing[] = [
     priceUnit: 'bin',
     quantity: 312,
     quantityUnit: 'bins',
-    imageUrl: 'https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=400',
+    imageUrl: 'https://images.unsplash.com/photo-1568584711075-3d021a7c3ca3?w=400',
     condition: 'Grade A',
     packing: 'Field bins, approx 1,000 lbs each',
     minOrder: 10,
