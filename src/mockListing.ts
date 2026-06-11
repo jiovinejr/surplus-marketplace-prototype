@@ -29,7 +29,7 @@ export const mockListings: Listing[] = [
     condition: 'Grade A, field fresh',
     packing: '25 lb boxes, 48 per pallet',
     minOrder: 5,
-    category: 'Vegetables',
+    category: 'Fruits',
     supplierNotes: 'Harvested this week, ready to move'
   },
   {
