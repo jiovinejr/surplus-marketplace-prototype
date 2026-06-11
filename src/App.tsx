@@ -100,8 +100,8 @@ export default function App() {
     .filter(l => activeCategory === 'All' || l.category === activeCategory)
     .filter(l => l.name.toLowerCase().includes(search.toLowerCase()))
 
-  return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {selected ? (
         <ListingDetail listing={selected} onBack={() => setSelected(null)} />
       ) : (
@@ -140,7 +140,7 @@ export default function App() {
           {filtered.length === 0 ? (
             <p className="text-gray-400 text-sm">No listings match your search.</p>
           ) : (
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {filtered.map(listing => (
                 <ListingCard key={listing.id} listing={listing} onClick={() => setSelected(listing)} />
               ))}
